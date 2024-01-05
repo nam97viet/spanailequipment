@@ -2,6 +2,10 @@
     font-family: 'Oswald', sans-serif;
 }
 
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
 .header {
     background-color: orange;
     height: 60px;
@@ -61,10 +65,11 @@
 
 }
 
-.hotline .bx {
+.bx {
     font-size: 1.5rem;
 }
 
 .hotline .hotline-content {
     font-size: 16px;
 }
+
