@@ -4,12 +4,17 @@
 
 a, a:visited, a:hover, a:active {
     color: inherit;
+    text-decoration: none;
 }
 
 .header {
     background-color: rgb(246, 181, 60);
     height: 60px;
     width: 100%;
+}
+
+.header-wrapper {
+    width: 98%;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -88,4 +93,112 @@ a, a:visited, a:hover, a:active {
 
 .address .bx {
     color: blue;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px ridge gray;
+}
+
+.footer-container {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .about-us,
+.footer-container .policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content .bx {
+    font-size: 12px;
+}
+
+.footer-container .footer-content .phone-number {
+    font-weight: bold;
+}
+
+#faq {
+    color: red;
+}
+
+
+
+
+
+/* iPhone 6/7/8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles for iPhone 6/7/8 */
+  .header-wrapper .menu,
+  .header-wrapper .address,
+  .header-wrapper .hotline {
+    visibility: hidden;
+  }
+
+  .header-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .search-bar {
+    display: flex;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .footer {
+    visibility: hidden;
+  }
+
+}
+
+/* iPhone X/XS/11 Pro */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+  /* Styles for iPhone X/XS/11 Pro */
+}
+
+/* iPhone 12 Pro Max */
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 926px) 
+  and (-webkit-min-device-pixel-ratio: 3.5) {
+  /* Styles for iPhone 12 Pro Max */
+}
+
+/* iPad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+  /* Styles for iPad */
+}
+
+/* iPad Pro 10.5" */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px) {
+  /* Styles for iPad Pro 10.5" */
+}
+
+/* iPad Pro 12.9" */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) {
+  /* Styles for iPad Pro 12.9" */
 }
