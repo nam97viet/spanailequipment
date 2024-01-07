@@ -1,168 +1,227 @@
 * {
-    font-family: 'Oswald', sans-serif;
-    width: clamp(375px, 100%, 1440px);
+  font-family: "Oswald", sans-serif;
 }
 
-a, a:visited, a:hover, a:active {
-    color: inherit;
-    text-decoration: none;
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 .header {
-    background-color: rgb(246, 181, 60);
-    height: 60px;
-    width: auto;
+  background-color: rgb(246, 181, 60);
+  height: 60px;
 }
 
 .header-wrapper {
-    width: 98%;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 5px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header img {
-    height: auto;
-    width: 85px;
+.header-wrapper img {
+  height: auto;
+  width: 85px;
 }
 
-.header .menu {
-    position: relative; /* Added position relative */
-    padding-left: 30px; /* Adjusted padding */
-    cursor: pointer;
+.header-wrapper .menu {
+  position: relative; /* Added position relative */
+  padding-left: 30px; /* Adjusted padding */
+  cursor: pointer;
 }
 
-
-.header .menu .menu-list {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position the menu list just below the menu */
-    left: 0;
-    background-color: white; /* Adjust the background color as needed */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+.header-wrapper .menu .menu-list {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the menu list just below the menu */
+  left: 0;
+  background-color: white; /* Adjust the background color as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
 }
 
-.header .menu .menu-list a {
-    color: black;
-    font-size: 12px;
-    width: 125px;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.header-wrapper .menu .menu-list a {
+  color: black;
+  font-size: 12px;
+  width: 125px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.header .menu:hover .menu-list {
-    display: block;
+.header-wrapper .menu:hover .menu-list {
+  display: block;
 }
 
-.header .menu .menu-list a:hover {
-    background-color: #ddd;
+.header-wrapper .menu .menu-list a:hover {
+  background-color: #ddd;
 }
 
 .menu-list img {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .search-bar input {
-    width: 250px;
-    border-radius: 0.5rem;
-    border: 1px solid black;
+  width: 250px;
+  border-radius: 0.5rem;
+  border: 1px solid black;
 }
 
 .hotline {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .bx {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .hotline .hotline-content {
-    font-size: 16px;
-    color: red;
-    margin-left:5px;
-    margin-right: 5px;
+  font-size: 16px;
+  color: red;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .hotline .bx {
-    color: red;
+  color: red;
 }
 
 .address .bx {
-    color: blue;
+  color: blue;
 }
 
 .footer {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    font-size: 12px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    border-top: 1px ridge gray;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 12px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 1px ridge gray;
 }
 
 .footer-container {
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-container .about-us,
 .footer-container .policy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-content .bx {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .footer-container .footer-content .phone-number {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #faq {
-    color: red;
+  color: red;
+}
+
+.body-container {
+  display: flex;
+  justify-content: center;
+}
+
+.body-container .side-nav {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.body-container .side-nav img {
+  width: 13px;
+  height: 13px;
+  padding: 5px;
+}
+
+.slide-show-wrapper {
+    width: 800px;
+    margin: 5px;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
 
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
 
+.mySlides img {
+    width: 100%;
+}
 
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-/* iPhone 6/7/8 */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-  /* Styles for iPhone 6/7/8 */
-  .header-wrapper .menu,
-  .header-wrapper .address,
-  .header-wrapper .hotline {
-    visibility: hidden;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-
-  .header-wrapper {
-    width: 50px;
-    height: 50px;
+  to {
+    opacity: 1;
   }
+}
 
-  .search-bar {
+.discount-img {
     display: flex;
-  }
+    flex-direction: column;
+    width: 450px;
+}
 
-  .search-bar input {
-    width: 150px;
-  }
-
-  .footer {
-    visibility: hidden;
-  }
-
+.discount-img img {
+    width: 50%;
+    height: auto;
+    margin: 5px;
 }
