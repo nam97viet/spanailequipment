@@ -97,6 +97,8 @@ a:active {
 .body-container {
   display: flex;
   justify-content: center;
+  height: 500px;
+  width: 100%;
 }
 
 .body-container .side-nav {
@@ -106,6 +108,7 @@ a:active {
   margin: 5px;
   border: 0.1px solid black;
   box-shadow: 20px #717171;
+  height: 478px;
 }
 
 .body-container .side-nav .side-nav-list {
@@ -123,12 +126,14 @@ a:active {
 .slide-show-wrapper {
     width: 800px;
     margin: 5px;
+    height: auto;
 }
 
 .slideshow-container {
   position: relative;
   margin: 5px;
   box-sizing: border-box;
+  height: auto;
 }
 
 
@@ -139,34 +144,7 @@ a:active {
 
 .mySlides img {
     width: 100%;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
+    height: 478px;
 }
 
 /* Fading animation */
@@ -187,11 +165,12 @@ a:active {
 .discount-img {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 350px;
+    height: auto;
 }
 
 .discount-img img {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: 5px;
 }
